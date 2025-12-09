@@ -1,0 +1,68 @@
+body {
+  padding-top: 90px; /* match navbar height */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* LOGO */
+.logo-icon {
+  font-size: 30px;
+}
+
+.logo-text {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f27b2c;
+}
+
+.logo-text span {
+  color: #ffa45c;
+}
+
+#navbarNav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+/* NAV LINKS */
+.nav-link {
+  font-size: 15px;
+  color: #5a5a5a !important;
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+}
+
+.nav-link:hover {
+  color: #f27b2c !important;
+}
+
+/* BUTTONS */
+.btn-orange {
+  background-color: #f27b2c;
+  color: white;
+  padding: 8px 22px;
+  border-radius: 8px;
+  transition: 0.25s ease;
+}
+
+.btn-orange:hover {
+  background-color: #d46823;
+}
+
+.btn-outline-orange {
+  border: 2px solid #f27b2c;
+  color: #f27b2c;
+  padding: 8px 22px;
+  border-radius: 8px;
+  transition: 0.25s ease;
+}
+
+.btn-outline-orange:hover {
+  background-color: #f27b2c;
+  color: white;
+}
