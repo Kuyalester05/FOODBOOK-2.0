@@ -4,13 +4,14 @@ import { Feed } from '../feed/feed';
 import { Sidebar } from '../sidebar/sidebar';
 import { CreatePost } from '../create-post/create-post';
 import { Navbar } from '../navbar/navbar';
+import { Profile } from "../profile/profile";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, Feed, Sidebar, CreatePost, Navbar, ],
+  imports: [CommonModule, Feed, Sidebar, CreatePost, Navbar, Profile],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrls: ['./home.css'],
 })
 export class Home {
 
