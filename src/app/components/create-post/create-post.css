@@ -1,0 +1,24 @@
+/* The card width based on screenshot */
+.create-post-wrapper {
+    width: 58%;   /* adjust here if needed */
+}
+
+/* Rounded gray buttons */
+.action-btn {
+    background: #e6e6e6;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: 500;
+}
+
+/* Orange icons like on your UI */
+.action-btn .material-icons-outlined {
+    font-size: 18px;
+    color: #d47c3b;
+}
+
+/* Post section shadow style */
+.create-post-wrapper .shadow-sm {
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.15) !important;
+}

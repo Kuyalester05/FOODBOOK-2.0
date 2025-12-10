@@ -18,11 +18,77 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="d-flex gap-3">
-          <button class="btn btn-outline-orange">Sign In</button>
-          <button class="btn btn-orange">Log In</button>
+          <button class="btn btn-outline-orange" data-bs-toggle="modal" data-bs-target="#signupModal">
+            Sign Up
+          </button>
+          <button class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#loginModal">
+            Log In
+          </button>
         </div>
       </div>
 
     </div>
   </div>
 </nav>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+    <div class="modal-content custom-modal-content">
+      <div class="modal-body p-4">
+        
+        <div class="mb-3">
+          <label for="loginEmail" class="form-label custom-label">Email Address</label>
+          <input type="email" class="form-control custom-input" id="loginEmail">
+        </div>
+
+        <div class="mb-3">
+          <label for="loginPassword" class="form-label custom-label">Password</label>
+          <input type="password" class="form-control custom-input" id="loginPassword">
+        </div>
+
+        <button type="button" class="btn btn-primary w-100 mb-3 action-btn">
+          Log In
+        </button>
+
+        <div class="text-center mb-3 divider-text">or</div>
+
+        <button type="button" class="btn google-btn w-100">
+          <span>Sign in with Google</span>
+          <img src="assets/google-g-logo.svg" alt="Google" class="google-icon">
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signupModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+    <div class="modal-content custom-modal-content">
+      <div class="modal-body p-4">
+
+        <div class="mb-3">
+          <label for="signupEmail" class="form-label custom-label">Email Address</label>
+          <input type="email" class="form-control custom-input" id="signupEmail">
+        </div>
+
+        <div class="mb-3">
+          <label for="signupPassword" class="form-label custom-label">Password</label>
+          <input type="password" class="form-control custom-input" id="signupPassword">
+        </div>
+
+        <button type="button" class="btn btn-primary w-100 mb-3 action-btn">
+          Sign Up
+        </button>
+
+        <div class="text-center mb-3 divider-text">or</div>
+
+        <button type="button" class="btn google-btn w-100">
+          <span>Sign in with Google</span>
+          <img src="assets/google-g-logo.svg" alt="Google" class="google-icon">
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>

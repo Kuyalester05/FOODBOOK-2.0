@@ -1,0 +1,52 @@
+/* Logo size */
+.foodbook-logo {
+    width: 90px;
+    object-fit: contain;
+}
+
+/* Search bar container */
+.search-wrapper {
+    width: 55%;
+    background: #ffffff;
+    border-radius: 20px;
+    height: 42px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.15);
+}
+
+/* Remove Bootstrap input outline */
+.search-wrapper input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Orange icons */
+.nav-icon {
+    font-size: 26px;
+    color: #ff7a00;
+    cursor: pointer;
+}
+
+/* Profile picture */
+.profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #ff7a00;
+    object-fit: cover;
+}
+
+.logo-icon {
+  font-size: 30px;
+}
+
+.logo-text {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f27b2c;
+}
+
+.logo-text span {
+  color: #ffa45c;
+}
