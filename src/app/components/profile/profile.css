@@ -11,4 +11,52 @@
     position: absolute; 
     right: 35px;
     top: 80px; 
+    position: fixed;
+}
+
+.profile-card .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; 
+    font-weight: 600; 
+    font-size: 16px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+
+.profile-card .material-icons {
+    font-size: 20px; 
+    margin-right: 8px; 
+}
+
+
+.posts-btn {
+    background-color: #f27b2c; 
+    color: white;
+    border: 2px solid #f27b2c;
+}
+
+.posts-btn:hover {
+    background-color: #f27b2c; 
+    border-color: #f27b2c;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 15px rgba(255, 127, 80, 0.3); 
+    color: white;
+}
+
+
+.logout-btn {
+    background-color: transparent;
+    color: #f27b2c;
+    border: 2px solid #f27b2c; 
+}
+
+.logout-btn:hover {
+    background-color: #f27b2c; 
+    color: white; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 127, 80, 0.2);
 }
