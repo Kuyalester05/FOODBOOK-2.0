@@ -1,0 +1,288 @@
+/* posts.component.css */
+
+/* Global Styles */
+.foodbook-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff7ed 0%, #ffffff 50%, #fff7ed 100%);
+}
+
+/* Header Styles */
+.foodbook-header {
+  background: white;
+  border-bottom: 1px solid #fed7aa;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.foodbook-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ea580c 0%, #fb923c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn-new-post {
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-new-post:hover {
+  background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+  color: white;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* Posts Feed */
+.posts-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.post-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #fed7aa;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.post-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Post Header */
+.post-header {
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: between;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.user-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.post-time {
+  font-size: 0.875rem;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+}
+
+/* Post Info */
+.post-info {
+  padding: 0 1.25rem 0.75rem;
+}
+
+.dish-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-top: 0.25rem;
+}
+
+.rating-stars i {
+  color: #f97316;
+  font-size: 1rem;
+}
+
+.rating-stars .bi-star {
+  color: #d1d5db;
+}
+
+.rating-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-left: 0.25rem;
+  color: #f97316;
+}
+
+.restaurant-info {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.location-icon {
+  color: #f97316;
+}
+
+.restaurant-name {
+  font-weight: 600;
+}
+
+.separator {
+  color: #d1d5db;
+  margin: 0 0.25rem;
+}
+
+/* Post Image */
+.post-image {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Post Actions */
+.post-actions {
+  padding: 1rem 1.25rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.btn-action {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4b5563;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.btn-action:hover {
+  color: #f97316;
+}
+
+.btn-action i {
+  font-size: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.btn-action.liked {
+  color: #f97316;
+}
+
+.btn-action.liked i {
+  color: #f97316;
+}
+
+/* Post Caption */
+.post-caption {
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.post-caption strong {
+  color: #111827;
+}
+
+.view-comments {
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+
+.view-comments:hover {
+  color: #374151 !important;
+}
+
+/* Load More Button */
+.btn-load-more {
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 32px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-load-more:hover {
+  background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(249, 115, 22, 0.3);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .foodbook-logo {
+    font-size: 1.5rem;
+  }
+
+  .btn-new-post {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .post-image {
+    height: 300px;
+  }
+
+  .action-buttons {
+    gap: 1rem;
+  }
+}
